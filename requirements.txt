@@ -1,0 +1,8 @@
+langchain_google_genai
+flask
+pytube
+deep_translator
+langchain
+dotenv
+flask-cors
+youtube-transcript-api

@@ -1,0 +1,89 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Popup Window */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2A0E61, #5F0A87, #140152);
+    color: #E3E3E3;
+    text-align: center;
+    padding: 20px;
+    width: 400px;  
+    height: 280px;  /* Increased to match min-height */
+    min-height: 280px;
+
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 10px 30px rgba(95, 10, 135, 0.6);
+    
+    /* Backdrop Blur for a Soft Glass Effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);  /* Safari & Chrome Support */
+    
+    overflow: hidden;
+    
+    /* Flexbox to Center Content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #B15EFF;
+    text-shadow: 0px 0px 8px rgba(177, 94, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+/* Language Dropdown */
+#language-select {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background: rgba(177, 94, 255, 0.5);
+    color: #14072e;
+    outline: none;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 15px rgba(177, 94, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+#language-select:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(177, 94, 255, 0.8);
+}
+
+/* Summarize Button */
+#SummarizeBtn {
+    margin-top: 15px;
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #FF007F, #8A2BE2);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px rgba(138, 43, 226, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+#SummarizeBtn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #8A2BE2, #FF007F);
+    box-shadow: 0px 6px 25px rgba(138, 43, 226, 0.9);
+}
+
+

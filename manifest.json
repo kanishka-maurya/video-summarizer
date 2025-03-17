@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Summarizer & Translator",
+    "version": "1.0",
+    "description": "Summarizes and translates YouTube videos in real time.",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://localhost:5000/*","https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    
+      "action": {
+        "default_popup": "popup.html"
+      }
+    }
+
+
+  
+  
