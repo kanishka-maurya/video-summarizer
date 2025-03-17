@@ -89,6 +89,8 @@ def summarize_text(text):
         return None
 
 
+
+
 def translate_text(text, target_lang="en"):
     """Translates text using GoogleTranslator."""
     if not text:

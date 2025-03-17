@@ -20,3 +20,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
 });
 
+//Clear storage when the last extension window is closed
+chrome.windows.onRemoved.addListener(() => {
+    chrome.storage.local.clear(() => {
+        console.log("Storage cleared as the last window was closed.");
+    });
+});
